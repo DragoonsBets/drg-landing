@@ -1,22 +1,56 @@
 import Head from 'next/head'
+import styled from 'styled-components'
 
-export default ({ children, title = 'This is the default title' }) => (
+// fonts to be added more elegantly
+// https://www.npmjs.com/package/styled-jsx#server-side-rendering
+const LayoutWrapper = styled.div`
+	background-color: #141928;
+	min-height: 100vh;
+	font-family: Raleway;
+	color: white;
+	padding: 3vw;
+	font-weight: 200;
+	button,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: Raleway;
+	}
+	caption {
+		font-size: 12px;
+		line-height: 16px;
+	}
+`
+
+export default ({
+	children,
+	title = 'This is the default title',
+	description = 'This is the default description'
+}) => (
 	<React.Fragment>
 		<Head>
 			<title>{title}</title>
+			<meta name='description' content={description} />
 			<meta charSet='utf-8' />
 			<meta name='viewport' content='initial-scale=1.0, width=device-width' />
 			<link
 				rel='stylesheet'
 				href='//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.11/semantic.min.css'
 			/>
+			<link
+				href='https://fonts.googleapis.com/css?family=Raleway:200,400,500'
+				rel='stylesheet'
+			/>
 		</Head>
 		{/* <header>
 			<nav>
 			    some navigation
 			</nav>
-		</header> */}
-		{children}
+        </header> */}
+		<LayoutWrapper>{children}</LayoutWrapper>
 		{/* <footer>
             some footer
         </footer> */}
