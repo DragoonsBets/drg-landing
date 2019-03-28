@@ -1,23 +1,26 @@
 {
-  "name": "with-styled-components",
-  "version": "1.0.0",
-  "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "@quickbaseoss/babel-plugin-styled-components-css-namespace": "^1.0.0-rc",
-    "axios": "^0.18.0",
-    "next": "^8.0.3",
-    "react": "^16.8.5",
-    "react-dom": "^16.8.5",
-    "react-player": "^1.10.0",
-    "semantic-ui-react": "^0.86.0",
-    "styled-components": "^4.0.0"
-  },
-  "devDependencies": {
-    "babel-plugin-styled-components": "^1.8.0"
-  },
-  "license": "ISC"
+	"name": "with-styled-components",
+	"version": "1.0.0",
+	"scripts": {
+		"dev": "next",
+		"build": "next build",
+		"start": "next start"
+	},
+	"dependencies": {
+		"@quickbaseoss/babel-plugin-styled-components-css-namespace": "^1.0.0-rc",
+		"axios": "^0.18.0",
+		"next": "^8.0.3",
+		"react": "^16.8.6",
+		"react-dom": "^16.8.6",
+		"semantic-ui-react": "^0.86.0",
+		"styled-components": "^4.0.0",
+		"video.js": "^6.7.3",
+		"videojs-youtube": "^2.4.1",
+		"url-loader": "^0.6.2",
+		"@zeit/next-css": "^1.0.1"
+	},
+	"devDependencies": {
+		"babel-plugin-styled-components": "^1.8.0"
+	},
+	"license": "ISC"
 }

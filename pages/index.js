@@ -1,7 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
 import styled from 'styled-components'
-import ReactPlayer from 'react-player'
 import { Icon, Divider } from 'semantic-ui-react'
 import Layout from '../components/Layout'
 import DButton from '../components/Buttons'
@@ -40,6 +39,10 @@ export default () => (
 			<p>shape: straight, circle, curve</p>
 			<DButton large>Button</DButton>
 			<br />
+			{/* <DButton large disabled>
+				Button
+			</DButton>
+			<br /> */}
 			<DButton large arrow>
 				Button
 			</DButton>
@@ -129,10 +132,6 @@ export default () => (
 				<a> here</a>
 			</Link>
 			<Divider />
-			<Typography h={2} weight='bold' size='headline'>
-				Video
-			</Typography>
-			<ReactPlayer url='https://www.youtube.com/watch?v=FNGEQmzDLR0' />
 		</IndexWrapper>
 	</Layout>
 )

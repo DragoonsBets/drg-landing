@@ -44,6 +44,10 @@ export default ({
 				href='https://fonts.googleapis.com/css?family=Raleway:200,400,500'
 				rel='stylesheet'
 			/>
+			{/* <link
+				rel='stylesheet'
+				href='https://video-react.github.io/assets/video-react.css'
+			/> */}
 		</Head>
 		{/* <header>
 			<nav>
