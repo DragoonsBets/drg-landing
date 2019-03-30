@@ -1,14 +1,17 @@
 import Head from 'next/head'
 import styled from 'styled-components'
+import Navbar from './Navbar'
+// import an empty css in static
+import 'video.js/dist/video-js.css'
 
 // fonts to be added more elegantly
 // https://www.npmjs.com/package/styled-jsx#server-side-rendering
 const LayoutWrapper = styled.div`
-	background-color: #141928;
 	min-height: 100vh;
 	font-family: Raleway;
 	color: white;
 	padding: 3vw;
+	background-color: #141928;
 	font-weight: 200;
 	button,
 	h1,
@@ -44,16 +47,10 @@ export default ({
 				href='https://fonts.googleapis.com/css?family=Raleway:200,400,500'
 				rel='stylesheet'
 			/>
-			{/* <link
-				rel='stylesheet'
-				href='https://video-react.github.io/assets/video-react.css'
-			/> */}
 		</Head>
-		{/* <header>
-			<nav>
-			    some navigation
-			</nav>
-        </header> */}
+		<header>
+			<Navbar />
+		</header>
 		<LayoutWrapper>{children}</LayoutWrapper>
 		{/* <footer>
             some footer

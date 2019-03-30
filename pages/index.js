@@ -37,39 +37,39 @@ export default () => (
 			<p>type: text, icon</p>
 			<p>icons: star, arrow (check if icons vary a lot)</p>
 			<p>shape: straight, circle, curve</p>
-			<DButton large>Button</DButton>
+			<DButton large='true'>Button</DButton>
 			<br />
 			{/* <DButton large disabled>
 				Button
 			</DButton>
 			<br /> */}
-			<DButton large arrow>
+			<DButton large='true' arrow='true'>
 				Button
 			</DButton>
 			<br />
-			<DButton large star>
+			<DButton large='true' star='true'>
 				Button
 			</DButton>
 			<br />
-			<DButton large star arrow>
+			<DButton large='true' star='true' arrow='true'>
 				Button
 			</DButton>
 			<br />
-			<DButton small>Button</DButton>
+			<DButton small='true'>Button</DButton>
 			<br />
-			<DButton small star>
+			<DButton small='true' star='true'>
 				Button
 			</DButton>
 			<br />
-			<DButton small arrow>
+			<DButton small='true' arrow='true'>
 				Button
 			</DButton>
 			<br />
-			<DButton small star arrow>
+			<DButton small='true' star='true' arrow='true'>
 				Button
 			</DButton>
 			<br />
-			<DButton star />
+			<DButton star='true' />
 			<Divider />
 			<Typography h={2} weight='bold' size='headline'>
 				Typography
@@ -119,10 +119,10 @@ export default () => (
 			<p>
 				<b>Body</b>
 			</p>
-			<caption>Caption</caption>
+			{/* <caption>Caption</caption>
 			<caption>
 				<b>Caption</b>
-			</caption>
+			</caption> */}
 			<Divider />
 			<Typography h={2} weight='bold' size='headline'>
 				Routing
