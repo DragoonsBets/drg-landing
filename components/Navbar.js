@@ -25,12 +25,6 @@ function Navbar(props) {
 	return (
 		<NavbarWrapper>
 			<div>
-				<img
-					src='/static/dragoons-logo.png'
-					alt='Dragoons logo'
-					width={50}
-					height={50}
-				/>
 				<LogoText>Dragoons</LogoText>
 			</div>
 			<div>

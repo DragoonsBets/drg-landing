@@ -5,6 +5,7 @@ import Typography from '../components/Typography'
 import DButton from '../components/Buttons'
 import Player from '../components/Player'
 import AccordionFAQ from '../components/AccordionFAQ'
+import RoadLine from '../components/RoadLine'
 
 const LandingWrapper = styled.div`
 	display: flex;
@@ -81,14 +82,36 @@ const FAQ = styled.div`
 	}
 `
 
+const Timeline = styled.div`
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin: 50px 0 0 0;
+	width: 100%;
+	> div:nth-child(1) {
+		text-align: center;
+	}
+`
+
 export default class Landing extends React.Component {
+	constructor(props) {
+		super(props)
+		this.state = { viewportWidth: '1' }
+	}
+	componentDidMount() {
+		this.setState({ viewportWidth: window.innerWidth })
+		window.addEventListener('resize', () =>
+			this.setState({ viewportWidth: window.innerWidth })
+		)
+		// window.addEventListener('resize', () => console.log('resize'))
+	}
 	render() {
 		const videoJsOptions = {
 			techOrder: ['youtube'],
 			autoplay: false,
 			controls: true,
-			width: '1300',
-			height: '500',
+			width: this.state.viewportWidth,
+			height: this.state.viewportWidth / 3,
 			sources: [
 				{
 					src: 'https://www.youtube.com/watch?v=jSJr3dXZfcg',
@@ -103,12 +126,11 @@ export default class Landing extends React.Component {
 				<LandingWrapper>
 					<Hero>
 						<div>
-							{/* <img src='/static/dragon.png' alt='' /> */}
 							<div />
 						</div>
 						<div>
 							<Typography h={2} weight='bold' size='jumbo'>
-								LET THE GAMES BEGIN!
+								Dragoons
 							</Typography>
 							<Typography h={3} weight='thin' size='title'>
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -119,7 +141,11 @@ export default class Landing extends React.Component {
 						</div>
 					</Hero>
 					<VideoWrapper>
-						<Player {...videoJsOptions} />
+						{this.state.viewportWidth === '1' ? (
+							<div>Loading...</div>
+						) : (
+							<Player {...videoJsOptions} />
+						)}
 					</VideoWrapper>
 					<Mission>
 						<Typography h={2} weight='bold' size='jumbo'>
@@ -178,6 +204,14 @@ export default class Landing extends React.Component {
 						</div>
 						<AccordionFAQ />
 					</FAQ>
+					<Timeline>
+						<div>
+							<Typography h={3} weight='bold' size='jumbo'>
+								Próximos pasos
+							</Typography>
+						</div>
+						<RoadLine />
+					</Timeline>
 				</LandingWrapper>
 			</Layout>
 		)
