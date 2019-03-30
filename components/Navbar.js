@@ -2,12 +2,12 @@ import React from 'react'
 import styled from 'styled-components'
 import DButton from '../components/Buttons'
 
-const NavbarWrapper = styled.div`
+const NavbarWrapper = styled.header`
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	background-color: #141928;
-	padding: 10px;
+	padding: 20px;
 	> div {
 		display: flex;
 		align-items: center;

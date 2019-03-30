@@ -48,9 +48,7 @@ export default ({
 				rel='stylesheet'
 			/>
 		</Head>
-		<header>
-			<Navbar />
-		</header>
+		<Navbar />
 		<LayoutWrapper>{children}</LayoutWrapper>
 		{/* <footer>
             some footer

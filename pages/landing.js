@@ -9,7 +9,18 @@ const LandingWrapper = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	text-align: center;
+`
+
+const Hero = styled.div`
+	display: flex;
+	> div {
+		flex: 1;
+	}
+	> div div {
+		width: 100%;
+		height: 400px;
+		background-color: lightgrey;
+	}
 `
 
 const VideoWrapper = styled.div`
@@ -36,14 +47,22 @@ export default class Landing extends React.Component {
 				title='Landing title'
 				description='A description about the landing page'>
 				<LandingWrapper>
-					<Typography h={2} weight='bold' size='mega'>
-						LET THE GAMES BEGIN!
-					</Typography>
-					<Typography h={3} weight='thin' size='title'>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi
-						facilis exercitationem sed.
-					</Typography>
-					<DButton large='true'>Action Button!</DButton>
+					<Hero>
+						<div>
+							{/* <img src='/static/dragon.png' alt='' /> */}
+							<div />
+						</div>
+						<div>
+							<Typography h={2} weight='bold' size='jumbo'>
+								LET THE GAMES BEGIN!
+							</Typography>
+							<Typography h={3} weight='thin' size='title'>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								Excepturi facilis exercitationem sed.
+							</Typography>
+							<DButton large='true'>Action Button!</DButton>
+						</div>
+					</Hero>
 					<VideoWrapper>
 						<Player {...videoJsOptions} />
 					</VideoWrapper>
