@@ -4,6 +4,7 @@ import Layout from '../components/Layout'
 import Typography from '../components/Typography'
 import DButton from '../components/Buttons'
 import Player from '../components/Player'
+import AccordionFAQ from '../components/AccordionFAQ'
 
 const LandingWrapper = styled.div`
 	display: flex;
@@ -71,6 +72,12 @@ const Features = styled.div`
 		width: 300px;
 		background-color: lightgray;
 		height: 200px;
+	}
+`
+
+const FAQ = styled.div`
+	> div:nth-child(1) {
+		text-align: center;
 	}
 `
 
@@ -163,6 +170,14 @@ export default class Landing extends React.Component {
 							<DButton small='true'>Leer más</DButton>
 						</div>
 					</Features>
+					<FAQ>
+						<div>
+							<Typography h={3} weight='bold' size='jumbo'>
+								Preguntas frecuentes
+							</Typography>
+						</div>
+						<AccordionFAQ />
+					</FAQ>
 				</LandingWrapper>
 			</Layout>
 		)
