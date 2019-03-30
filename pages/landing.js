@@ -13,6 +13,7 @@ const LandingWrapper = styled.div`
 
 const Hero = styled.div`
 	display: flex;
+	align-items: center;
 	width: 100%;
 	> div {
 		flex: 1;
@@ -33,6 +34,23 @@ const VideoWrapper = styled.div`
 
 const Mission = styled.div`
 	text-align: center;
+`
+
+const Features = styled.div`
+	display: flex;
+	text-align: center;
+	margin: 60px 0 0 0;
+	> div {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 0 20px;
+	}
+	> div > div:nth-child(1) {
+		width: 100%;
+		background-color: lightgray;
+		height: 200px;
+	}
 `
 
 export default class Landing extends React.Component {
@@ -65,8 +83,9 @@ export default class Landing extends React.Component {
 								LET THE GAMES BEGIN!
 							</Typography>
 							<Typography h={3} weight='thin' size='title'>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-								Excepturi facilis exercitationem sed.
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+								eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+								enim ad minim veniam, quis nostrud exercitation ullamco laboris.
 							</Typography>
 							<DButton large='true'>Action Button!</DButton>
 						</div>
@@ -88,6 +107,41 @@ export default class Landing extends React.Component {
 							sunt in culpa qui officia deserunt mollit anim id est laborum.
 						</Typography>
 					</Mission>
+					<Features>
+						<div>
+							<div />
+							<Typography h={4} weight='bold' size='headline'>
+								Desafía a otros gamers
+							</Typography>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+								eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							</p>
+							<DButton small='true'>Leer más</DButton>
+						</div>
+						<div>
+							<div />
+							<Typography h={4} weight='bold' size='headline'>
+								Gana votando
+							</Typography>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+								eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							</p>
+							<DButton small='true'>Leer más</DButton>
+						</div>
+						<div>
+							<div />
+							<Typography h={4} weight='bold' size='headline'>
+								Apoya a tu comunidad
+							</Typography>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+								eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							</p>
+							<DButton small='true'>Leer más</DButton>
+						</div>
+					</Features>
 				</LandingWrapper>
 			</Layout>
 		)
