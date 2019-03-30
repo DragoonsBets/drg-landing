@@ -6,7 +6,7 @@ const XAccordion = styled(Accordion)`
 	&& {
 		display: flex;
 		flex-direction: column;
-		width: 100vw;
+		width: 50%;
 		padding: 0 30px;
 		margin: 40px 0 0 0;
 		> div {

@@ -77,6 +77,10 @@ const Features = styled.div`
 `
 
 const FAQ = styled.div`
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
 	> div:nth-child(1) {
 		text-align: center;
 	}
@@ -100,10 +104,9 @@ export default class Landing extends React.Component {
 	}
 	componentDidMount() {
 		this.setState({ viewportWidth: window.innerWidth })
-		window.addEventListener('resize', () =>
-			this.setState({ viewportWidth: window.innerWidth })
-		)
-		// window.addEventListener('resize', () => console.log('resize'))
+		// window.addEventListener('resize', () =>
+		// 	this.setState({ viewportWidth: window.innerWidth })
+		// )
 	}
 	render() {
 		const videoJsOptions = {
@@ -149,7 +152,7 @@ export default class Landing extends React.Component {
 					</VideoWrapper>
 					<Mission>
 						<Typography h={2} weight='bold' size='jumbo'>
-							CATCHY TEXT HERE
+							Catchy text here
 						</Typography>
 						<Typography h={3} weight='thin' size='title'>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
