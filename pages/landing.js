@@ -13,8 +13,12 @@ const LandingWrapper = styled.div`
 
 const Hero = styled.div`
 	display: flex;
+	width: 100%;
 	> div {
 		flex: 1;
+	}
+	> div:nth-child(1) {
+		margin: 0 30px 0 0;
 	}
 	> div div {
 		width: 100%;
@@ -25,6 +29,10 @@ const Hero = styled.div`
 
 const VideoWrapper = styled.div`
 	margin: 50px 0;
+`
+
+const Mission = styled.div`
+	text-align: center;
 `
 
 export default class Landing extends React.Component {
@@ -66,6 +74,20 @@ export default class Landing extends React.Component {
 					<VideoWrapper>
 						<Player {...videoJsOptions} />
 					</VideoWrapper>
+					<Mission>
+						<Typography h={2} weight='bold' size='jumbo'>
+							CATCHY TEXT HERE
+						</Typography>
+						<Typography h={3} weight='thin' size='title'>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+							eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+							enim ad minim veniam, quis nostrud exercitation ullamco laboris
+							nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+							reprehenderit in voluptate velit esse cillum dolore eu fugiat
+							nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+							sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</Typography>
+					</Mission>
 				</LandingWrapper>
 			</Layout>
 		)
