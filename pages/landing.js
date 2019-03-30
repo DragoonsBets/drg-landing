@@ -12,14 +12,19 @@ const LandingWrapper = styled.div`
 `
 
 const Hero = styled.div`
-	display: flex;
-	align-items: center;
-	width: 100%;
+	@media (min-width: 900px) {
+		display: flex;
+		align-items: center;
+		width: 100%;
+	}
 	> div {
 		flex: 1;
 	}
 	> div:nth-child(1) {
-		margin: 0 30px 0 0;
+		@media (min-width: 900px) {
+			margin: 0 30px 0 0;
+		}
+		margin: 0 0 30px 0;
 	}
 	> div div {
 		width: 100%;
@@ -39,15 +44,31 @@ const Mission = styled.div`
 const Features = styled.div`
 	display: flex;
 	text-align: center;
+	justify-content: center;
+	flex-wrap: wrap;
 	margin: 60px 0 0 0;
 	> div {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		margin: 0 20px;
+		margin: 0 0 50px 0;
+		width: 100%;
+		@media (min-width: 660px) {
+			width: 300px;
+		}
+	}
+	> div:nth-child(1) {
+		@media (min-width: 660px) {
+			margin: 0 20px 50px 0;
+		}
+	}
+	> div:nth-child(2) {
+		@media (min-width: 978px) {
+			margin: 0 20px 50px 0;
+		}
 	}
 	> div > div:nth-child(1) {
-		width: 100%;
+		width: 300px;
 		background-color: lightgray;
 		height: 200px;
 	}
