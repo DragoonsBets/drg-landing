@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import DButton from '../components/Buttons'
+import SuscribeModal from './SuscribeModal'
 
 const NavbarWrapper = styled.header`
 	display: flex;
@@ -34,7 +34,7 @@ function Navbar(props) {
 				<LogoText>Dragoons</LogoText>
 			</div>
 			<div>
-				<DButton large='true'>Suscribe for FREE</DButton>
+				<SuscribeModal />
 			</div>
 		</NavbarWrapper>
 	)

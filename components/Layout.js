@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Navbar from './Navbar'
 // import an empty css in static
 import 'video.js/dist/video-js.css'
+import Footer from './Footer'
 
 // fonts to be added more elegantly
 // https://www.npmjs.com/package/styled-jsx#server-side-rendering
@@ -50,8 +51,6 @@ export default ({
 		</Head>
 		<Navbar />
 		<LayoutWrapper>{children}</LayoutWrapper>
-		{/* <footer>
-            some footer
-        </footer> */}
+		<Footer />
 	</React.Fragment>
 )

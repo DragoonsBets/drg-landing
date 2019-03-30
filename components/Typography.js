@@ -38,7 +38,7 @@ class Typography extends React.Component {
 							? '20px'
 							: this.props.size === 'subheader'
 							? '16px'
-							: '0',
+							: '1px',
 					fontWeight:
 						this.props.weight === 'bold'
 							? '500'

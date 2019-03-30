@@ -27,8 +27,8 @@ const Hero = styled.div`
 	}
 `
 
-const VideoWrapper = styled.div`
-	margin: 50px 0;
+const MarginTopAndBottomWrapper = styled.div`
+	margin: 30px 0;
 `
 
 const Mission = styled.div`
@@ -71,9 +71,9 @@ export default class Landing extends React.Component {
 							<DButton large='true'>Action Button!</DButton>
 						</div>
 					</Hero>
-					<VideoWrapper>
+					<MarginTopAndBottomWrapper>
 						<Player {...videoJsOptions} />
-					</VideoWrapper>
+					</MarginTopAndBottomWrapper>
 					<Mission>
 						<Typography h={2} weight='bold' size='jumbo'>
 							CATCHY TEXT HERE

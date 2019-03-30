@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Button } from 'semantic-ui-react'
+import { Icon } from 'semantic-ui-react'
 
 const DButtonWrapper = styled(Button)`
 	display: flex;
@@ -47,10 +48,11 @@ function DButton(props) {
 			small={props.small}
 			star={props.star}
 			arrow={props.arrow}
-			disabled={props.disabled}>
-			<span>★</span>
+			disabled={props.disabled}
+			{...props}>
+			<span><Icon size='tiny' inverted name='star'/></span>
 			{props.children}
-			<span>ˑ</span>
+			<span><Icon size='tiny' inverted name='arrow right'/></span>
 		</DButtonWrapper>
 	)
 }
