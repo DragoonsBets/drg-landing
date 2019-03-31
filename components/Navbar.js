@@ -7,7 +7,7 @@ const NavbarWrapper = styled.header`
 	align-items: center;
 	justify-content: space-between;
 	background-color: #141928;
-	padding: 20px;
+	padding: 24px;
 	> div {
 		display: flex;
 		align-items: center;

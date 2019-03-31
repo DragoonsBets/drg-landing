@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { Button } from 'semantic-ui-react'
 import { Icon } from 'semantic-ui-react'
 
-const DButtonWrapper = styled(Button)`
+const DrgButtonWrapper = styled(Button)`
 	display: flex;
 	font-weight: bold;
 	color: ${props => (props.disabled ? 'rgba(255, 255, 255, 0.6)' : 'white')};
@@ -41,20 +41,20 @@ const DButtonWrapper = styled(Button)`
 	}
 `
 
-function DButton(props) {
+function DrgButton(props) {
 	return (
-		<DButtonWrapper
+		<DrgButtonWrapper
 			large={props.large}
 			small={props.small}
 			star={props.star}
 			arrow={props.arrow}
 			disabled={props.disabled}
 			{...props}>
-			<span><Icon size='tiny' inverted name='star'/></span>
+			<span style={{'margin': '-7px', 'margin-left': '10px'}}><Icon size='tiny' inverted name='star'/></span>
 			{props.children}
-			<span><Icon size='tiny' inverted name='arrow right'/></span>
-		</DButtonWrapper>
+			<span style={{'margin': '-7px', 'margin-left': '10px'}}><Icon size='tiny' inverted name='arrow right'/></span>
+		</DrgButtonWrapper>
 	)
 }
 
-export default DButton
+export default DrgButton

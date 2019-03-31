@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Layout from '../components/Layout'
 import Typography from '../components/Typography'
-import DButton from '../components/Buttons'
+import DrgButton from '../components/Buttons'
 import Player from '../components/Player'
 
 const LandingWrapper = styled.div`
@@ -68,7 +68,7 @@ export default class Landing extends React.Component {
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 								Excepturi facilis exercitationem sed.
 							</Typography>
-							<DButton large='true'>Action Button!</DButton>
+							<DrgButton large='true'>Action Button!</DrgButton>
 						</div>
 					</Hero>
 					<MarginTopAndBottomWrapper>
