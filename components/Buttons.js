@@ -13,12 +13,13 @@ const DrgButtonWrapper = styled(Button)`
 		props.large ? '12px 16px' : props.small ? '7px 14px' : '8px'};
 	border-radius: 4px;
 	min-width: ${props => (props.large ? '88px' : props.small ? '80px' : '0')};
+	background-position: center;
 	background-image: ${props =>
 		props.disabled
-			? 'linear-gradient(to right, red, #512b65)'
-			: 'linear-gradient(to right, #982d4e, #512b65)'};
+			? 'linear-gradient(red, #512b65)'
+			: 'linear-gradient(#982d4e, #512b65)'};
 	:hover {
-		background-image: linear-gradient(to right, #982d4e, #512b65);
+		background-image: linear-gradient(#982d4e, #512b65);
 		color: white;
 	}
 	:focus {
