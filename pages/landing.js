@@ -174,7 +174,7 @@ export default class Landing extends React.Component {
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 								eiusmod tempor incididunt ut labore et dolore magna aliqua.
 							</p>
-							<DButton small='true'>Leer más</DButton>
+							<DrgButton small='true'>Leer más</DrgButton>
 						</div>
 						<div>
 							<div />
@@ -185,7 +185,7 @@ export default class Landing extends React.Component {
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 								eiusmod tempor incididunt ut labore et dolore magna aliqua.
 							</p>
-							<DButton small='true'>Leer más</DButton>
+							<DrgButton small='true'>Leer más</DrgButton>
 						</div>
 						<div>
 							<div />
@@ -196,7 +196,7 @@ export default class Landing extends React.Component {
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 								eiusmod tempor incididunt ut labore et dolore magna aliqua.
 							</p>
-							<DButton small='true'>Leer más</DButton>
+							<DrgButton small='true'>Leer más</DrgButton>
 						</div>
 					</Features>
 					<FAQ>
